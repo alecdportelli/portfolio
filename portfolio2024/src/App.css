@@ -1,0 +1,26 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'acumin-pro', sans-serif;
+  font-style: normal;
+  background-color: #0C0C0E;
+  color: white;
+}
+
+.about,
+.contact {
+  padding-top: 150px;
+  font-size: 50px;
+  font-weight: 200;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: 40%;
+}
+
+.secondaryHeader{
+  padding-top: 20px;
+  color: #9B9B9B;
+}
+
+/* Add more styling as needed */
