@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
         <div className="footer-container">
             <div className="left-column">
-                <div className="left-top">Let's build.</div>
+                <div className="left-top">Let's start building.</div>
                 <div className="left-bottom">
                     <button className='connectButton'>Connect</button>
                 </div>
