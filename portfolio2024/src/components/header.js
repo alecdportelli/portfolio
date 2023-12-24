@@ -6,11 +6,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="section button-container">
+      
       </div>
 
       <div className="section button-container"> 
-        <button className="hover-underline-animation header-button">Work</button>
-        <button className="hover-underline-animation header-button">About</button>
+        <button className="hover-underline-animation header-button middle-button">Work</button>
+        <button className="hover-underline-animation header-button middle-button">About</button>
       </div>
 
       <div className="section button-container">
