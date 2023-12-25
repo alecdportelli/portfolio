@@ -11,7 +11,7 @@ body {
 .about,
 .contact {
   padding-top: 175px;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 200;
   padding-left: 100px;
   padding-right: 100px;
@@ -20,7 +20,7 @@ body {
 
 .secondaryHeader{
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 35px;
   color: #9B9B9B;
 }
 

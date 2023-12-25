@@ -109,3 +109,44 @@
     padding-bottom: 25px;
   }
   
+
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack the divs vertically */
+        align-items: center; /* Center divs when stacked */
+        padding: 20px; /* Adjust padding as needed for stacked layout */
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .copyright{
+        font-family: 'acumin-pro', sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        margin-left: 25%;
+        color: #9B9B9B;
+        padding-bottom: 25px;
+      }
+
+      .footerButton{
+        background-color: rgba(62, 62, 157, 0);
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: 'acumin-pro', sans-serif;
+        font-style: normal;
+        margin-top: 20px;
+      }
+
+      .left-column {
+        align-items: center;
+      }
+
+      .left-bottom {
+        flex: 1; /* Divide the left column in half */
+        padding-bottom: 30px;
+        margin: 0;
+      }
+  }

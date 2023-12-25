@@ -47,4 +47,17 @@
     color: #555;
     text-align: left;
   }
+
+  @media (max-width: 768px) {
+    .image-row {
+      flex-direction: column; /* Stack the images vertically */
+      align-items: center; /* Center items in the column */
+      padding: 100px; /* Adjust padding as needed for stacked layout */
+    }
+  
+    .image-container {
+      margin-bottom: 20px; /* Add space between vertically stacked items */
+      padding-top: 50px;
+    }
+  }
   
