@@ -3,9 +3,12 @@
     display: flex;
     justify-content: space-between; /* Space out the columns */
     align-items: flex-start; /* Align columns to the top */
-    padding-left: 100px; /* Add padding as needed */
-    padding-right: 100px; /* Add padding as needed */
+    padding-left: 150px; /* Add padding as needed */
+    padding-right: 150px; /* Add padding as needed */
     padding-top: 200px;
+    font-family: "ibm-plex-mono", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
   
   .left-column {
@@ -17,9 +20,9 @@
   .left-top{
     flex: 1; /* Divide the left column in half */
     font-size: 35px;
-    font-family: 'acumin-pro', sans-serif;
+    /* font-family: 'acumin-pro', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500; */
     padding-bottom: 30px;
   }
 
@@ -46,6 +49,10 @@
     height: 40px;
     color: #ffffff;
     cursor: pointer;
+
+    font-family: "ibm-plex-mono", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   .connectButton:hover {
@@ -60,12 +67,16 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    font-family: 'acumin-pro', sans-serif;
-    font-style: normal;
+    /* font-family: 'acumin-pro', sans-serif;
+    font-style: normal; */
     margin-top: 20px;
     margin-left: 20px;
     padding-left: 13px;
     padding-right: 13px;
+
+    font-family: "ibm-plex-mono", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   .hover-underline-animation {
@@ -93,18 +104,21 @@
   }
 
   .horizontal-line {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 25px;
     border: none;
     border-top: 1px solid #9B9B9B; /* Specify line color and thickness */
   }
 
   .copyright{
-    font-family: 'acumin-pro', sans-serif;
+    /* font-family: 'acumin-pro', sans-serif;
+    font-style: normal; */
+    font-family: "ibm-plex-mono", sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-size: 18px;
-    padding-left: 100px;
+    padding-left: 150px;
     color: #9B9B9B;
     padding-bottom: 25px;
   }

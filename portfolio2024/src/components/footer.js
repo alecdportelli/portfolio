@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-container">
 
             <div className="left-column">
-                <div className="left-top">Let's start building.</div>
+                <div className="left-top">Let's start building 🛠️</div>
                 <div className="left-bottom">
                     <button className='connectButton'>Connect</button>
                 </div>
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className='copyright'>
-            @ 2024 Alec Portelli
+            @ 2024 Alec Portelli ⚡
         </div>
     </footer>
   );

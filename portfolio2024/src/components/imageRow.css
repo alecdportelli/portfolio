@@ -4,8 +4,8 @@
     justify-content: space-between;
     max-width: 100%;
     margin: 0 auto;
-    padding-right: 90px;
-    padding-left: 90px;
+    padding-right: 140px;
+    padding-left: 140px;
     padding-bottom: 200px;
   }
   
@@ -20,6 +20,7 @@
 
   .image-container:hover {
     opacity: 0.4; /* Adjust the opacity value to make it dimmer on hover */
+    cursor: pointer;
   }
 
   img:last-child {
@@ -31,7 +32,9 @@
   }
   
   .project-name {
-    font-family: 'acumin-pro', sans-serif;
+    /* font-family: 'acumin-pro', sans-serif; */
+    font-family: "ibm-plex-mono", sans-serif;
+    font-weight: 500;
     font-style: normal;
     margin-top: 5px;
     font-size: 20px;
@@ -40,7 +43,9 @@
   }
 
   .project-desc {
-    font-family: 'acumin-pro', sans-serif;
+    /* font-family: 'acumin-pro', sans-serif; */
+    font-family: "ibm-plex-mono", sans-serif;
+    font-weight: 500;
     font-style: normal;
     margin-top: 0px;
     font-size: 18px;
