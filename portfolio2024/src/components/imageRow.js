@@ -11,11 +11,9 @@ const ImageRow = ({ images }) => {
     <div className="image-row">
       {images.map((item, index) => (
         <div key={index} className={`image-container ${index === 1 ? 'second-image' : ''}`}>
-          <BrowserRouter>
-            <Link to={`/${item.path}`}>
-              <img src={item.src} alt={`Image ${index + 1}`} />
-            </Link>
-          </BrowserRouter>
+
+          <Link to={`/${item.path}`}> <img src={item.src} alt={`Image ${index + 1}`} /> </Link>
+
           <div className="project-name">{item.title}</div>
           <div className="project-desc">{item.description}</div>
         </div>
@@ -25,13 +23,13 @@ const ImageRow = ({ images }) => {
 };
 
 ImageRow.propTypes = {
-    images: PropTypes.arrayOf(
-      PropTypes.shape({
-        src: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-  };
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default ImageRow;

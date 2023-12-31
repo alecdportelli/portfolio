@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css'; 
 
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 
@@ -22,7 +22,7 @@ import proj6Tile from "./SVG/Proj6.svg";
 import Footer from './components/footer';
 
 /* Pages */
-import Aspen from './aspen'; // Import your new page component
+import Aspen from './pages/aspen'; // Import your new page component
 
 function App() {
   const projectRowOne = [
@@ -38,44 +38,38 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <Header />
-      <section className="about">
-        
-        <span>
-          I'm an engineer with interests at the intersection of AI, simulation, 
-          and human-centered design
-        </span>
-        <br></br>
-        <div className='secondaryHeader'>
+
+      <div className="App">
+        <Header />
+        <section className="about">
+          
           <span>
-            Currently building autonomous systems at the MITRE corporation and pursuing a masters in robotics at Johns Hopkins
+            I'm an engineer with interests at the intersection of AI, simulation, 
+            and human-centered design
           </span>
+          <br></br>
+          <div className='secondaryHeader'>
+            <span>
+              Currently building autonomous systems at the MITRE Corporation and pursuing a masters in robotics at Johns Hopkins
+            </span>
 
-          {/* <span>This is a sentence with a </span>
-          <span style={{ color: 'blue' }}>different</span>
-          <span> colored word.</span> */}
+          </div>
+        </section>
+        
+        {/* Projects */}
+        <section>
+          <div className='projects'>
+            <ImageRow images={projectRowOne} />
+            <ImageRow images={projctRowTwo} />
+          </div>
+        </section>
 
-          {/* <span>
-             at MITRE and pursuing a masters in robotics at Johns Hopkins
-          </span> */}
-        </div>
-      </section>
-      
-      {/* Projects */}
-      <section>
-        <div className='projects'>
-          <ImageRow images={projectRowOne} />
-          <ImageRow images={projctRowTwo} />
-        </div>
-      </section>
+        <section>
+            <Footer />
+        </section>
 
-      <section>
-          <Footer />
-      </section>
+      </div>
 
-      {/* Add more sections/components as needed */}
-    </div>
   );
 }
 

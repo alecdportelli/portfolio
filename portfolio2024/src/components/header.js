@@ -1,6 +1,7 @@
 // Header.js
 import React from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -10,7 +11,11 @@ const Header = () => {
       </div>
 
       <div className="section button-container"> 
-        <button className="hover-underline-animation header-button middle-button">Work</button>
+        <Link to={`/`}>
+          <button className="hover-underline-animation header-button middle-button">Work</button>
+        </Link>
+
+
         <button className="hover-underline-animation header-button middle-button">About</button>
       </div>
 
