@@ -96,7 +96,7 @@
   }
   
   /* Media query for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header {
       grid-template-columns: 1fr; /* Change to a single column on smaller screens */
     }

@@ -124,7 +124,7 @@
   }
   
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .footer-container {
         flex-direction: column; /* Stack the divs vertically */
         align-items: center; /* Center divs when stacked */
@@ -132,15 +132,6 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-
-    .copyright{
-        font-family: 'acumin-pro', sans-serif;
-        font-style: normal;
-        font-size: 18px;
-        margin-left: 25%;
-        color: #9B9B9B;
-        padding-bottom: 25px;
-      }
 
       .footerButton{
         background-color: rgba(62, 62, 157, 0);
@@ -162,5 +153,14 @@
         flex: 1; /* Divide the left column in half */
         padding-bottom: 30px;
         margin: 0;
+      }
+
+      .copyright{
+        font-family: "ibm-plex-mono", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        color: #9B9B9B;
+        padding-bottom: 25px;
       }
   }
