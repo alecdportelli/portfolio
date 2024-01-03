@@ -11,6 +11,8 @@ import AspenArchDiagram from "../SVG/AspenArch.svg"
 import UUVLiDAR from "../SVG/UUVLiDAR.svg"
 import ROSOcto from "../SVG/ROSOcto.svg"
 import TeleopDiagram from "../SVG/Teleop.svg"
+import AspenNN from "../SVG/AspenNN.svg"
+import TrainingEnvs from "../SVG/TrainingEnvs.svg"
 
 const Aspen = () => {
   return (
@@ -27,6 +29,10 @@ const Aspen = () => {
 
       <div className='UUV-header'>
         <img src={UUV}/>
+      </div>
+
+      <div className='body-par'>
+        #NOTE: This case study goes over the high level engineering concepts of the project. I am sharing what I told I could share.
       </div>
 
       <div className='body-par-title'>
@@ -158,6 +164,118 @@ const Aspen = () => {
       </div>
       <div className='octomap'>
         <img src={ROSOcto}/>
+      </div>
+      <div className='body-par'>
+        This voxel map can be used for SLAM and gives the AI model another level of high fidelity information to make better informed decisions. 
+      </div>
+
+      <br></br>
+      <br></br>
+      <div className='body-par-title'>
+        Training The UUV
+      </div>
+      <div className='body-par'>
+        With all of the foundational pieces in place, the next phase is to train the UUV. 
+      </div>
+      <div className='body-par'>
+        Reinforcement learning is the method of choice because it is the technique that is best suited for robots and controls. 
+      </div>
+      <div className='body-par'>
+        PPO (proximal policy optimization) is the algorithm of choice. It is the current-state-art for robotic control for both continuous and discrete action spaces
+      </div>
+      <div className='body-par'>
+        For many of our use cases, both continuous and discrete action spaces are used, which adds a layer of sophistication to the nueral network design. 
+      </div>
+      <div className='AspenNN'>
+        <img src={AspenNN}/>
+      </div>
+
+      <br></br>
+      <br></br>
+      <div className='body-par-title'>
+        Large Scale Reinforcement Learning
+      </div>
+      <div className='body-par'>
+        Aspen's partnership with NVIDIA has given us access to the world's best compute power. We are pushing AI to the edge by using GPU clusters 
+        for faster training and more robust models. This makes it significantly easier to iterate and test algorithms when models are returned quickly. 
+      </div>
+      <div className='body-par'>
+        The team has also made a strong effort to design everything so model training can be done in parallel. Parallel training environments with domain randomization
+        allow for agents to not overfit to a single environment or task. 
+      </div>
+      <div className='training-envs'>
+        <img src={TrainingEnvs}/>
+      </div>
+      <div className='body-par'>
+        This gives engineers confidence that when the model is deployed to hardware it can handle any environment that it may encounter. A limited AI model 
+        that can only work in certain conditions is useless.
+      </div>
+      <br></br>
+      <br></br>
+
+      <div className='center-title'>
+        Leadership Opportunities 
+      </div>
+      <div className='body-par'>
+        Aspen has given me a ton of experience with professional demonstrations, presentations, and leadership opportunities:
+      </div>
+      <div class="styled-list">
+        Presented project work at I/ITSEC 2023
+        <br></br>
+        <br></br>
+
+        Performed multiple demos to leaders of autonomy at NVIDIA, Microsoft, the Navy, and MITRE
+        <br></br>
+        <br></br>
+
+        Project work presented to CEO and CTO during digital twin happy hour
+        <br></br>
+        <br></br>
+
+        Created DoD demo content for NVIDIA using Isaac Sim
+        <br></br>
+        <br></br>
+
+        Aspen work demonstrated at MITRE tech talk with over 100 people in attendance 
+        <br></br>
+        <br></br>
+
+        Led training workshops to help teammates get up to speed with Isaac Sim
+      </div>
+      <br></br>
+      <br></br>
+
+      <div className='center-title'>
+        Notable Project Outcomes
+      </div>
+      <div className='body-par'>
+        While the Aspen is still in progress, my work has contributed to the following accomplishments:
+      </div>
+      <div class="styled-list">
+        A direct quote from a NVIDIA executive: "MITRE's Aspen work is the most advanced use of NVIDIA Isaac Sim across the DoD"
+        <br></br>
+        <br></br>
+
+        Having the Aspen autonomy framework selected to host a government challenge for UUVs
+        <br></br>
+        <br></br>
+
+        Recieving six months of project funding because of successful demos 
+        <br></br>
+        <br></br>
+      </div>
+      <br></br>
+      <br></br>
+
+      <div className='body-par-title'>
+        Conculsion
+      </div>
+      <div className='body-par'>
+        Working on Aspen has been a career changing experience. I have learned so much and got the chance to work on cutting edge engineering problems. 
+        Furthermore, I have learned the importance of communicating our ideas and results clearly during high stakes presentations and demonstrations. 
+      </div>
+      <div className='body-par'>
+        I look forward to working on more projects like Aspen in the future. 
       </div>
 
       <Footer />
