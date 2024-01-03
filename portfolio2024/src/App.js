@@ -21,9 +21,6 @@ import proj6Tile from "./SVG/Proj6.svg";
 
 import Footer from './components/footer';
 
-/* Pages */
-import Aspen from './pages/aspen'; // Import your new page component
-
 function App() {
   const projectRowOne = [
     {src: proj1Tile, title: 'Aspen', description: 'Combining RL and simulation to train UUVs in digital environments', path: 'aspen'},  

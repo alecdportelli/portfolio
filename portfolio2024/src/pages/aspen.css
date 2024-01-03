@@ -1,0 +1,88 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-title{
+    padding-top: 100px;
+    font-size: 60px;
+
+    /* color: #3B90F7; */
+}
+
+.secondary-title{
+    padding-top: 15px;
+    font-size: 25px;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    text-align: center;
+}
+
+.UUV-header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* For text bodies  */
+.body-par-title{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 25px;
+
+    color: #3B90F7;
+}
+
+.body-par{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    padding-bottom: 50px;
+
+    font-size: 20px;
+}
+
+.VenDiagram{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ArchDiagram{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.UUVLiDAR{
+    margin-left: 30%;
+    margin-right: 30%; 
+}
+
+.teleop{
+    margin-left: 20%;
+    margin-right: 20%; 
+    padding-bottom: 50px;
+}
+
+.octomap{
+    margin-left: 10%;
+    margin-right: 10%; 
+}
