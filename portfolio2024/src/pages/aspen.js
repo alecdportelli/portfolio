@@ -32,7 +32,7 @@ const Aspen = () => {
       </div>
 
       <div className='body-par'>
-        #NOTE: This case study goes over the high level engineering concepts of the project. I am sharing what I told I could share.
+        #NOTE: This case study goes over the high level engineering concepts of the project. I am sharing what I was told I could share.
       </div>
 
       <div className='body-par-title'>

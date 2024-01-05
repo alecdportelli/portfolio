@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 import Aspen from './pages/aspen';
+import Trailblazer from './pages/tbz';
 
 import {
   createBrowserRouter,
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path:"aspen",
     element:<Aspen/>
+  },
+  {
+    path:"trailblazer",
+    element:<Trailblazer/>
   },
 ]);
 
