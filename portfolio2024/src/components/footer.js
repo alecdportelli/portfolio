@@ -1,6 +1,8 @@
 import React from 'react';
 import './footer.css';
 
+import Pdf from '../resume.pdf';
+
 const Footer = () => {
   return (
     <footer>
@@ -14,7 +16,7 @@ const Footer = () => {
             </div>
 
             <div className="right-column">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={Pdf} target="_blank" rel="noopener noreferrer">
                     <button className='footerButton hover-underline-animation '>Resume</button>
                 </a>
 

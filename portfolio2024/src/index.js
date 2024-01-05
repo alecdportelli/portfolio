@@ -7,6 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Aspen from './pages/aspen';
 import Trailblazer from './pages/tbz';
+import Safari from './pages/safari';
+import Falcon from './pages/falcon';
+import UAVSim from './pages/uavsim';
+import Robokin from './pages/robokin';
+import About from './pages/about';
 
 import {
   createBrowserRouter,
@@ -28,6 +33,26 @@ const router = createBrowserRouter([
     path:"trailblazer",
     element:<Trailblazer/>
   },
+  {
+    path:"safari",
+    element:<Safari/>
+  },
+  {
+    path:"falcon",
+    element:<Falcon/>
+  },
+  {
+    path:"rl",
+    element:<UAVSim/>
+  },
+  {
+    path:"robokin",
+    element:<Robokin/>
+  },
+  {
+    path:"about",
+    element:<About/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

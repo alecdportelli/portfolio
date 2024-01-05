@@ -117,8 +117,12 @@ const Trailblazer = () => {
             </div>
             <div className='body-par'>
                 Before writing a single line of code, I had a lot of meetings with potential end users to figure out exactly what features Trailblazer
-                needed to support. 
+                needed to support:
             </div>
+            <div className='body-par'> <li>3D Terrain Engine</li> </div>
+            <div className='body-par'> <li>Database / FileIO</li> </div>
+            <div className='body-par'> <li>RF Physics Library</li> </div>
+            <div className='body-par'> <li>Responsive UI</li> </div>
             <div className='body-par'>
                 After determining what had to be built, I then started to design the software architecture. I collaborated with some senior
                 engineers to come up with a design that is easy to develop, but more importantly, flexible and scalable. 

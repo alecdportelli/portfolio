@@ -15,8 +15,9 @@ const Header = () => {
           <button className="hover-underline-animation header-button middle-button">Work</button>
         </Link>
 
-
-        <button className="hover-underline-animation header-button middle-button">About</button>
+        <Link to={`/about`}>
+          <button className="hover-underline-animation header-button middle-button">About</button>
+        </Link>
       </div>
 
       <div className="section button-container">
