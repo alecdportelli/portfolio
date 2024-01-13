@@ -65,3 +65,48 @@
     margin-left: 33%;
     margin-right: 33%;
 }
+
+.TBZArch{
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+.QuadTreeTBZ{
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+.MapTile{
+    margin-left: 30%;
+    margin-right: 30%; 
+}
+
+.JSONOutput{
+    margin-left: 30%;
+    margin-right: 30%; 
+}
+
+.RadVelo{
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+.FinalCalc{
+    margin-left: 35%;
+    margin-right: 35%; 
+}
+
+.UIProto{
+    margin-left: 20%;
+    margin-right: 20%; 
+}
+
+.center-title-tbz{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #FF0000;
+}

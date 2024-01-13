@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className='copyright'>
-            @ 2024 Alec Portelli ⚡
+            @ 2024 Alec Portelli ⚡ Made with React
         </div>
     </footer>
   );

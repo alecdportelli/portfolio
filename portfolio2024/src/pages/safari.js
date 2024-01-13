@@ -5,20 +5,24 @@ import './safari.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+import SafariHeader from '../SVG/SAFARI-Header.svg'
+
 const Safari = () => {
     return (
         <div>
             <Header />
 
             <div className='center main-title'>
-                AI Safari
+                AI-SAFARI
             </div>
 
             <div className='center secondary-title'>
-                A Reinforcement Learning Testbed To Test and Evaluate Algorithm Security 
+                A Reinforcement Learning Testbed To Analyze and Evaluate Algorithm Security 
             </div>
 
-            <br></br>
+            <div className='Safari-Header'>
+                <img src={SafariHeader}/>
+            </div>
 
             <div className='center secondary-title'>
             🏗️ 🚧 Currently under construction 🚧 🏗️
