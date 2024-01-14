@@ -8,6 +8,9 @@ import Footer from '../components/footer';
 import SafariHeader from '../SVG/SAFARI-Header.svg'
 import Mag from '../SVG/Mag.svg'
 import MoonLander from '../SVG/MoonLander.svg'
+import SafArch from '../SVG/SafArch.svg'
+import NormVsAd from '../SVG/NormVsAd.svg'
+import SafMDP from '../SVG/SafMDP.svg'
 
 const Safari = () => {
     return (
@@ -102,12 +105,26 @@ const Safari = () => {
             </div>
             <div className='body-par'>
                 My role primarily focused on the simulation environments. However, I put a lot of work into building
-                the pipelines to to the evaluation toolkit. 
+                the pipelines to the evaluation toolkit. 
+            </div>
+            <div className='MoonLander'>
+                <img src={SafArch}></img>
             </div>
             <div className='body-par'>
-                
+                The simulation piece has two parts: the environment that trains the agent and the environment
+                that simulates the model during averserial attacks. 
             </div>
-
+            <div className='MoonLander'>
+                <img src={NormVsAd}></img>
+            </div>
+            <div className='body-par'>
+                To train agents, we used NVIDIA's Isaac Sim package and StableBaseline3's PPO algorithm. 
+                Using these two pieces, the team designed our own RL agent gymnasium similar to the one in the
+                Aspen project:
+            </div>
+            <div className='MoonLander'>
+                <img src={SafMDP}></img>
+            </div>
 
 
             <div className='center secondary-title'>
