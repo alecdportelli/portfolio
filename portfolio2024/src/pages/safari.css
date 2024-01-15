@@ -33,3 +33,25 @@
     margin-right: 25%; 
     padding-bottom: 50px;
 }
+
+.DRLSAT{
+    margin-left: 20%;
+    margin-right: 20%; 
+    padding-bottom: 50px;
+}
+
+.RocketDiagram{
+    margin-left: 35%;
+    margin-right: 35%; 
+    padding-bottom: 50px;
+}
+
+.center-title-saf{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #CF752C;
+}

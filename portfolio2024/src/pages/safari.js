@@ -11,6 +11,10 @@ import MoonLander from '../SVG/MoonLander.svg'
 import SafArch from '../SVG/SafArch.svg'
 import NormVsAd from '../SVG/NormVsAd.svg'
 import SafMDP from '../SVG/SafMDP.svg'
+import DRLSAT from '../SVG/DRL-SAT.svg'
+import RocketDiagram from '../SVG/RocketDiagram.svg'
+import CameraFrustrum from '../SVG/CameraFrust.svg'
+import NNARch from '../SVG/SafNNArch.svg'
 
 const Safari = () => {
     return (
@@ -22,7 +26,7 @@ const Safari = () => {
             </div>
 
             <div className='center secondary-title'>
-                A Simulation Testbed To Evaluate The Security Of Trained Reinforcement Learning Models
+                A simulation testbed to evaluate the security of trained reinforcement learning models
             </div>
 
             <div className='Safari-Header'>
@@ -125,10 +129,167 @@ const Safari = () => {
             <div className='MoonLander'>
                 <img src={SafMDP}></img>
             </div>
+            <div className='body-par'>
+                Once a model has been trained, a user can add attack vectors on to the agent and set
+                a config file with experiment parameters. 
+            </div>
+            <div className='body-par'>
+                The data points from the attack are collected, and the policies
+                can then be compared using the evaluation toolkit. 
+            </div>
+            <div className='DRLSAT'>
+                <img src={DRLSAT}></img>
+            </div>
+            <br></br>
+            <br></br>
+
+            <div className='body-par-title-safari'>
+                Building Moon Lander In 3D
+            </div>
+            <div className='body-par'>
+                2D scenarios are not useful for government sponsors, so the first step
+                was to rebuild the physics in 3D. 
+            </div>
+            <div className='body-par'>
+                Using diagrams from online, some college physics review, and the NVIDIA articulation
+                API, we were able to create a basic kinematic model of a rocket:
+            </div>
+            <div className='RocketDiagram'>
+                <img src={RocketDiagram}></img>
+            </div>
+            <br></br>
+            <br></br>
 
 
-            <div className='center secondary-title'>
-            🏗️ 🚧 Currently under construction 🚧 🏗️
+            <div className='body-par-title-safari'>
+                Sensor Fusion
+            </div>
+            <div className='body-par'>
+                Sensor fusion is a great way to add additional information beyond just the kinematic state
+                of the rocket. 
+            </div>
+            <div className='body-par'>
+                A camera was added to the side of the rocket to assist with landing, along with a fake LiDAR
+                that can detect the distance from the ground.
+            </div>
+            <div className='body-par'>
+                While sensor fusion adds realism to the simulation, it also adds attack vectors that an
+                adversary can take advantage of. This is helpful for designing experiments on how to
+                attack each sensor and to see how it can mess with the trained model. 
+            </div>
+            <div className='MoonLander'>
+                <img src={CameraFrustrum}></img>
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-safari'>
+                Training The Rocket
+            </div>
+            <div className='body-par'>
+                To train the rocket to land we used PPO and a continuous action space. The part that
+                makes this interesting is that we used the camera feed to guide the rocket to the landing
+                pad. 
+            </div>
+            <div className='body-par'>
+                We combined a CNN with an MLP to train the models to control the rocket:
+            </div>
+            <div className='DRLSAT'>
+                <img src={NNARch}></img>
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-safari'>
+                Attacking The Model 
+            </div>
+            <div className='body-par'>
+                The next phase of the project was coming up with experiments 
+                on how to confuse the camera. 
+            </div>
+            <div className='body-par'>
+                The goal was to add pertubations that were as invisible to the naked
+                eye as much as possible.
+            </div>
+            <div className='body-par'>
+                Ideas included: adding a water mark on to the camera lens, 
+                changing a filter, putting a sticker or foreign object on the landing pad. 
+            </div>
+            <div className='body-par'>
+                The data was collected during the adverserial attack and then piped into the 
+                evaluation toolkit. 
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-safari'>
+                Takeaways 
+            </div>
+            <div className='body-par'>
+                The number one lesson I learned from this project is that
+                machine learning models are brittle!
+            </div>
+            <div className='body-par'>
+                Even though our moon lander scenario was simple, we quickly found ways 
+                to disturb the camera feed which sent the rocket out of control. 
+            </div>
+            <div className='body-par'>
+                This means our model had a lack of complex agent interactions, and 
+                was not nearly as robust as it needed to be to withstand attacks. 
+            </div>
+            <div className='body-par'>
+                It is incredibly important when using digital twins and simulation techniques 
+                to ensure that as many cases are covered as possible. That way when something 
+                out of the ordinary happens, the model is prepared for the unexpected. 
+            </div>
+            <div className='body-par'>
+                It is also extremely difficult to understand why models break when they do.
+                Without the evaluation toolkit it is virtually impossible to figure out what causes
+                a failure and what can be done to avoid it. 
+            </div>
+            <div className='body-par'>
+                Creating evalution toolkits and being able to design and control adverserial attacks
+                helps security engineers demystify the model's black box.
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='center-title-saf'>
+                Notable Project Outcomes
+            </div>
+            <div className='body-par'>
+                AI SAFARI allowed me to partake in internal R and D work and present the findings to MITRE:
+            </div>
+            <div class="styled-list">
+                Presented at the MITRE R and D Spring review
+                <br></br>
+                <br></br>
+                Presented at the MITRE R and D Fall review
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-safari'>
+                Conculsion 
+            </div>
+            <div className='body-par'>
+                As automation becomes a bigger part of society, AI SAFARI has exposed
+                me to the importance of keeping AI safe and secure and the challenges that come with
+                it. 
+            </div>
+            <div className='body-par'>
+                I was able to get hands on experience with using PyTorch, the Isaac Sim API,
+                and other tools to build and break trained models. I greatly enjoyed 
+                working with other AI engineers to creeate the tools needed to help solve
+                real world problems.
+            </div>
+            <div className='body-par'>
+                I look forward to working on projects like AI SAFARI in the future. 
             </div>
 
             <Footer />
