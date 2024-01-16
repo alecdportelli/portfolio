@@ -5,6 +5,8 @@ import './about.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+import Portrait from '../SVG/SelfPort.svg'
+
 const About = () => {
     return (
         <div>
@@ -15,6 +17,10 @@ const About = () => {
             </div>
 
             <br></br>
+
+            <div className='Portrait'>
+                <img src={Portrait}></img>
+            </div>
 
             <div className='center secondary-title'>
             🏗️ 🚧 Currently under construction 🚧 🏗️
