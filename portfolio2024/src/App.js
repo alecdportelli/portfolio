@@ -31,7 +31,7 @@ function App() {
   const projctRowTwo = [
     {src: proj4Tile, title: 'Falcon', description: 'A 3D visualization tool for electronic warfare scenarios', path: 'falcon'},  
     {src: proj5Tile, title: 'Intro to RL Final Project', description: 'Training multi-agent UAV delivery systems in Unity', path: 'rl'}, 
-    {src: proj6Tile, title: 'Robot Kinematics and Dynamics Final Project', description: 'A python library to generate equations of motion for any robot', path: 'robokin'}, 
+    {src: proj6Tile, title: 'UAV Systems and Control', description: 'Building and programming to coordinate UAVs', path: 'robokin'}, 
   ];
 
   return (

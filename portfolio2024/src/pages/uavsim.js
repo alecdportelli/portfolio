@@ -11,11 +11,11 @@ const UAVSim = () => {
             <Header />
 
             <div className='center main-title'>
-                Intro To RL Final Project
+                RL Final Project
             </div>
 
             <div className='center secondary-title'>
-                Using Reinforcement Learning To Train UAVs In Unity
+                Using reinforcement learning to train UAVs in Unity
             </div>
 
             <br></br>
