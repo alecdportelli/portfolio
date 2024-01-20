@@ -4,6 +4,12 @@ import './footer.css';
 import Pdf from '../resume.pdf';
 
 const Footer = () => {
+    function openEmailApplication(emailLink) {
+        var link = document.createElement('a');
+        link.href = emailLink;
+        link.click();
+        }
+
   return (
     <footer>
         <div className="footer-container">
@@ -11,7 +17,7 @@ const Footer = () => {
             <div className="left-column">
                 <div className="left-top">Let's start building 🛠️</div>
                 <div className="left-bottom">
-                    <button className='connectButton'>Connect</button>
+                    <button onClick={() => openEmailApplication('mailto:alecportelli@icloud.com')} className='connectButton'>Connect</button>
                 </div>
             </div>
 

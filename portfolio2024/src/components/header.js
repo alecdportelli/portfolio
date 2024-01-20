@@ -4,6 +4,12 @@ import './header.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  function openEmailApplication(emailLink) {
+    var link = document.createElement('a');
+    link.href = emailLink;
+    link.click();
+ }
+ 
   return (
     <header className="header">
       <div className="section button-container">
@@ -21,7 +27,7 @@ const Header = () => {
       </div>
 
       <div className="section button-container">
-        <button className="header-button right-button">Contact</button>
+        <button onClick={() => openEmailApplication('mailto:alecportelli@icloud.com')} className="header-button right-button">Contact</button>
       </div>
     </header>
   );
