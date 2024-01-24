@@ -8,6 +8,8 @@ import Footer from '../components/footer';
 import FalHeader from '../SVG/FalHeader.svg'
 import FalArch from '../SVG/FalArch.svg'
 import UnityVD from '../SVG/UnityVennDiagram.svg'
+import TCPDiagram from '../SVG/TCPDiagram.svg'
+import FalQuad from '../SVG/FalQuad.svg'
 
 const Falcon = () => {
     return (
@@ -155,6 +157,67 @@ const Falcon = () => {
                 I had very little network engineering experience at the time, but I learned the basics
                 of using TCP sockets and built a connection between the hardware server and Falcon.
             </div>
+            <div className='FalArch'>
+                <img src={TCPDiagram}></img>
+            </div>
+            <div className='body-par'>
+                JSON was used because it is a lightweight message that is easy to parse. Falcon
+                can quickly take the JSON and make the necessary visual updates. 
+            </div>
+            <div className='body-par'>
+                This TCP connection is the keystone of the application. Being able to receive live 
+                updates at a fast rate allows users to see the simulation in real time. 
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-fal'>
+                3D Terrain Engine
+            </div>
+            <div className='body-par'>
+                The terrain engine is exactly the same as the one in Trailblazer. A 
+                quadtree approach was used to divy up the terrain and map into 
+                an optimized configuration so it can load and render quickly. The Trailblazer
+                case study goes over the algorithm in more depth.
+            </div>
+            <div className='FalArch'>
+                <img src={FalQuad}></img>
+            </div>
+            <div className='body-par'>
+                The terrain engine was the most important piece in upgrading the overall 
+                user experience. 
+            </div>
+            <div className='body-par'>
+                Being able to see data on 3D terrain with 3D models of vehicles and antennas
+                provided users with a lot more insight during simulations. 
+            </div>
+            <div className='body-par'>
+                This made debugging and generating new scenarios for testing exponentially easier. 
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-fal'>
+                Interfaces To Other Devices
+            </div>
+            <div className='body-par'>
+                The terrain engine and JSON messages providing all the necessary information
+                to visualize the scenario. However, Falcon also allows inputs from other sources
+                to engage with the live simulation.
+            </div>
+            <div className='body-par'>
+                The main use case for allowing additional inputs is to allow users to control 
+                vehicles during the simulation, mainly with a flight stick, steering wheel, 
+                or game controller. 
+            </div>
+            <div className='body-par'>
+                This feature allows engineers to experiment with different scenarions and see 
+                live results on the RF hardware, rather than remaking a scenario and processing 
+                the whole thing from scratch.  
+            </div>
+
             <div className='center secondary-title'>
             🏗️ 🚧 Currently under construction 🚧 🏗️
             </div>
