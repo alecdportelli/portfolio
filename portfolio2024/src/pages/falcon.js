@@ -10,6 +10,7 @@ import FalArch from '../SVG/FalArch.svg'
 import UnityVD from '../SVG/UnityVennDiagram.svg'
 import TCPDiagram from '../SVG/TCPDiagram.svg'
 import FalQuad from '../SVG/FalQuad.svg'
+import GamepadInput from '../SVG/GamepadInput.svg'
 
 const Falcon = () => {
     return (
@@ -212,14 +213,64 @@ const Falcon = () => {
                 vehicles during the simulation, mainly with a flight stick, steering wheel, 
                 or game controller. 
             </div>
+            <div className='FalArch'>
+                <img src={GamepadInput}></img>
+            </div>
             <div className='body-par'>
                 This feature allows engineers to experiment with different scenarions and see 
                 live results on the RF hardware, rather than remaking a scenario and processing 
                 the whole thing from scratch.  
             </div>
+            <div className='body-par'>
+                Adding this interface keeps the hardware in the loop and allows for greater flexibility
+                for users. 
+            </div>
+            <br></br>
+            <br></br>
 
-            <div className='center secondary-title'>
-            🏗️ 🚧 Currently under construction 🚧 🏗️
+
+            <div className='body-par-title-fal'>
+                Notable Project Outcomes
+            </div>
+            <div className='body-par'>
+                Even though Falcon was my first project at MITRE, it still yielded
+                some great outcomes: 
+            </div>
+            <div class="styled-list">
+                Deployed software to over 20 RF engineers and counting 
+                <br></br>
+                <br></br>
+
+                Performed 10 demos to multiple department chief engineers
+                <br></br>
+                <br></br>
+
+                Users were able to test and debug scenarios twice as quickly
+                <br></br>
+                <br></br>
+
+                Conducted live demos with hardware in the loop to army engineers
+                <br></br>
+                <br></br>
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div className='body-par-title-fal'>
+                Conculsion
+            </div>
+            <div className='body-par'>
+                Falcon was the ideal first project for a new hire. I got introduced to working with 
+                senior level engineers, designing systems, testing code, and doing demonstrations. 
+            </div>
+            <div className='body-par'>
+                I really enjoyed being able to have a lot of input on the design of the application and 
+                not just handed tasks to complete. My project leads did a great job in helping me learn 
+                what I needed to know to be a contributing developer. 
+            </div>
+            <div className='body-par'>
+                I look forward to building more applications like Falcon in the future. 
             </div>
 
             <Footer />

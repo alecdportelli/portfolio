@@ -28,3 +28,31 @@
     margin-right: 25%;
     padding-bottom: 15px;
 }
+
+/* For text bodies  */
+.body-par-title-fal{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 25px;
+
+    color: #655E99;
+}
+
+.center-title-tbz{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #655E99;
+}
