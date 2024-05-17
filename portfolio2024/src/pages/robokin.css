@@ -1,0 +1,77 @@
+.UAVSimHeader{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-left: 28%;
+    margin-right: 28%; 
+}
+
+.body-par-title-uav{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 25px;
+
+    color: #008309;
+}
+
+.codeSnippetStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 30% 2vh; 
+    height: 30vh;
+    max-width: 80%;
+    background-color: #131212;
+    border-radius: 5px;
+    border: 1px solid #008309;
+    overflow-x: auto;
+}
+
+.PIRcodeSnippetStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 30% 2vh; 
+    height: 50vh;
+    max-width: 80%;
+    background-color: #131212;
+    border-radius: 5px;
+    border: 1px solid #008309;
+    overflow-x: auto;
+}
+
+.EOMGraphic{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 37%;
+    margin-right: 37%; 
+}
+
+.FMGraphic{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-left: 35%;
+    margin-right: 35%; 
+}
+
+.PhysicsLoop{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 27%;
+    margin-right: 27%; 
+}
+
+.SF{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 30%;
+    margin-right: 30%; 
+}

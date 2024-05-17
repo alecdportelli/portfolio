@@ -1,0 +1,16 @@
+/* src/components/VideoComponent.css */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container h2 {
+    text-align: center;
+}
+
+.video-container video {
+    max-width: 80%; /* Adjust this value as needed */
+    max-height: 80%; /* Adjust this value as needed */
+}
