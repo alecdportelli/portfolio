@@ -25,8 +25,8 @@
 .UUV-header{
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 /* For text bodies  */
@@ -85,6 +85,11 @@
 .octomap{
     margin-left: 10%;
     margin-right: 10%; 
+}
+
+.c2{
+    margin-left: 15%;
+    margin-right: 15%; 
 }
 
 .AspenNN{

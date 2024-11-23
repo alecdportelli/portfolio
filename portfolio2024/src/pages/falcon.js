@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useEffect } from "react";
+
 import './falcon.css';
 
 import Header from '../components/header';
@@ -13,6 +15,11 @@ import FalQuad from '../SVG/FalQuad.svg'
 import GamepadInput from '../SVG/GamepadInput.svg'
 
 const Falcon = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); // This ensures it runs only on component mount
+
     return (
         <div>
             <Header />
@@ -258,7 +265,7 @@ const Falcon = () => {
 
 
             <div className='body-par-title-fal'>
-                Conculsion
+                Conclusion
             </div>
             <div className='body-par'>
                 Falcon was the ideal first project for a new hire. I got introduced to working with 

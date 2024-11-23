@@ -1,5 +1,5 @@
 /* App.css or your component-specific CSS */
-.header {
+.header-main {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
@@ -7,26 +7,28 @@
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 10px;
+    background-color: #ffffff;
   }
   
-  .section {
+  .section-main {
     grid-column: span 1; /* Each section spans one column */
     padding: 0px;
   }
   
-  .button-container {
+  .button-container-main {
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     margin-right: 100%;
     width: 100%;
   }
   
-  .header-button {
+  .header-button-main {
     padding: 8px 16px;
-    background-color: #0C0C0E;
-    color: #ffffff;
+    color: #0066ff;
+    background-color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -39,18 +41,18 @@
     margin-top: 0px;
   }
 
-  .middle-button{
+  .middle-button-main{
     padding-left: 25px;
     padding-right: 25px;
   }
 
-  .hover-underline-animation {
+  .hover-underline-animation-main {
     display: inline-block;
     position: relative;
-    color: #ffffff;
+    color: #0C0C0E;
   }
   
-  .hover-underline-animation::after {
+  .hover-underline-animation-main::after {
     content: '';
     position: absolute;
     width: 75%;
@@ -58,19 +60,19 @@
     height: 2px;
     bottom: 0;
     left: 8px;
-    background-color: #ffffff;
+    background-color: #0C0C0E;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
   
-  .hover-underline-animation:hover::after {
+  .hover-underline-animation-main:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
   
-  .right-button {
+  .right-button-main {
     margin-left: auto; /* Push the 'Contact' button to the right */
-    background-color: #0C0C0E; /* Red background for the 'Contact' button */
+    background-color: #ffffff; /* Red background for the 'Contact' button */
     transition: background-color 0.3s ease;
     border: 0.5px solid #ffffff;
     border-radius: 20px;
@@ -78,7 +80,7 @@
     height: 40px;
   }
 
-  .right-button:hover {
+  .right-button-main:hover {
     background-color: #9B9B9B; /* New color on hover */
     border: 0px solid #ffffff;
   }

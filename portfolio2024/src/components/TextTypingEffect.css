@@ -1,0 +1,29 @@
+.typing-effect-container {
+  display: flex;
+  justify-content: center; /* Center horizontally within the container */
+  align-items: center; /* Center vertically within the container */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 0 20px; /* Horizontal padding */
+  max-width: 80%; /* Limit the width to 80% of the viewport width */
+  box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+/* TextTypingEffect.css */
+.inline {
+  opacity: 0; /* Initial opacity */
+  transition: opacity 1s ease-in-out; /* Smooth fade in and out */
+}
+
+.opacity-100 {
+  opacity: 1; /* Fully visible */
+}
+
+.opacity-0 {
+  opacity: 0; /* Fully hidden */
+}
+
+.transition-opacity {
+  transition: opacity 1s ease-in-out; /* Apply fade transition */
+}

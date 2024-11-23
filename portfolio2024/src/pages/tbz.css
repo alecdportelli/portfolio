@@ -101,7 +101,17 @@
     margin-right: 20%; 
 }
 
-.center-title-tbz{
+.HardwareIF{
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+
+.MVC{
+    margin-left: 30%;
+    margin-right: 30%; 
+}
+
+.center-title-tbz-original{
     font-size: 30px;
     display: flex;
     align-items: center;

@@ -16,7 +16,14 @@ import RocketDiagram from '../SVG/RocketDiagram.svg'
 import CameraFrustrum from '../SVG/CameraFrust.svg'
 import NNARch from '../SVG/SafNNArch.svg'
 
+import { useEffect } from "react";
+
 const Safari = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); // This ensures it runs only on component mount
+
     return (
         <div>
             <Header />
@@ -275,7 +282,7 @@ const Safari = () => {
 
 
             <div className='body-par-title-safari'>
-                Conculsion 
+                Conclusion 
             </div>
             <div className='body-par'>
                 As automation becomes a bigger part of society, AI SAFARI has exposed

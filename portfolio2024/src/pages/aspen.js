@@ -2,10 +2,12 @@ import React from 'react';
 
 import './aspen.css'; 
 
+import { useEffect } from "react";
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-import UUV from "../SVG/UUV.svg";
+import UUV from "../SVG/BlueUUV.svg";
 import VenDiagram from "../SVG/VenDiagram.svg"
 import AspenArchDiagram from "../SVG/AspenArch.svg"
 import UUVLiDAR from "../SVG/UUVLiDAR.svg"
@@ -13,8 +15,17 @@ import ROSOcto from "../SVG/ROSOcto.svg"
 import TeleopDiagram from "../SVG/Teleop.svg"
 import AspenNN from "../SVG/AspenNN.svg"
 import TrainingEnvs from "../SVG/TrainingEnvs.svg"
+import Fossen from "../SVG/Fossen.svg"
+import C2Arch from "../SVG/C2Arch.svg"
+import C2UIMock from "../SVG/C2UIMock.svg"
 
 const Aspen = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); // This ensures it runs only on component mount
+
+
   return (
     <div>
       <Header />
@@ -24,7 +35,7 @@ const Aspen = () => {
       </div>
 
       <div className='center secondary-title'>
-        Training UUVs to execute missions with AI, digital twins, and high fidelity physics simulation
+        Training UUVs to execute missions with AI, digital twins, and high fidelity physics simulations
       </div>
 
       <div className='UUV-header'>
@@ -127,6 +138,21 @@ const Aspen = () => {
         with the Isaac Sim API. We have built off other UUV models to create our own that can be used for GNC applications. 
       </div>
       <div className='body-par'>
+        The math model for the UUV is based off of Fossen's equations of motion:
+      </div>
+      <div className='UUVLiDAR'>
+        <img src={Fossen}/>
+      </div>
+      <br></br>
+      <div className='body-par'>
+        The model accounts for added mass, a linear and quadratic damping matrix for hydrodynamic drag, 
+        and a restoring forces and moments matrix. 
+      </div>
+      <div className='body-par'>
+        All of these terms build a high fidelity model that can
+        be used for realistic simulation.
+      </div>
+      <div className='body-par'>
         Isaac Sim also includes a sensor package that is added to the UUV 3D model. UUVs are often equipped with side scan sonars and
         fathometers. To simulate those sensors, we used a LiDAR sensor module and applied a convolution to the raycast to mimic underwater
         signal propogation. While this prototype is in early stages, it has shown promising results. 
@@ -135,7 +161,8 @@ const Aspen = () => {
         <img src={UUVLiDAR}/>
       </div>
       <div className='body-par'>
-        Another critical component when building physics models is unit tests! I wrote a UUV test library using Python Unittest which is still used to this day.
+        Another critical component when building physics models is unit tests! I wrote a UUV test framework
+        which is used to test all of the physics and rotation math used in the vehicle model.
       </div>
 
       <br></br>
@@ -213,6 +240,54 @@ const Aspen = () => {
       <br></br>
       <br></br>
 
+      <div className='body-par-title'>
+        Full Stack Development And Distributed Systems 
+      </div>
+      <div className='body-par'>
+        End users need to be able to interact with the autonomy in real time. 
+      </div>
+      <div className='body-par'>
+        Aspen quickly developed a need for a command and control system that allows users to understand
+        information from the simulation and judge the performance of the trained algorithms.
+      </div>
+      <div className='body-par'>
+        I built a web application using Node, React.js, and Three.js that was able to stream in information from 
+        Isaac Sim in real time and visualize the data in 3D.  
+      </div>
+      <div className='body-par'>
+        Thanks to the project's hardware resources, multiple machines were strung together to form a modern 
+        distributed system:
+      </div>
+      <div className='c2'>
+        <img src={C2Arch}/>
+      </div>
+      <br></br>
+      <br></br>
+      <div className='body-par'>
+        Many of our sponsors are interested in seeing the developed autonomy run in real time. 
+      </div>
+      <div className='body-par'>
+        The UI provides the necessary insight that a user would need to make informed decisions during runtime. 
+        An end user would not be able to make any evaluations from the simulation itself, so adding a UI on top
+        of our autonomy platform gives a way for users to interact with what is going on under the hood. 
+      </div>
+      <div className='body-par'>
+        Below is a low fidelity mock of what the UI looks like when the simulation is running:
+      </div>
+      <div className='c2'>
+        <img src={C2UIMock}/>
+      </div>
+      <br></br>
+      <br></br>
+      <div className='body-par'>
+        Effectively distributing data amongst hardware sources is a key capability for ASPEN. Being
+        able to build, run, and analyze autonomy using simulation allows for faster iteration by keeping
+        the end users in the loop.  
+      </div>
+      <br></br>
+      <br></br>
+      
+
       <div className='center-title'>
         Leadership Opportunities 
       </div>
@@ -268,7 +343,7 @@ const Aspen = () => {
       <br></br>
 
       <div className='body-par-title'>
-        Conculsion
+        Conclusion
       </div>
       <div className='body-par'>
         Working on Aspen has been a career changing experience. I have learned so much and got the chance to work on cutting edge engineering problems. 

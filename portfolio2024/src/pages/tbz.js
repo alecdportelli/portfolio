@@ -14,8 +14,17 @@ import JsonOutput from '../SVG/JSONOutput.svg'
 import RadVelo from '../SVG/RadVelo.svg'
 import FinalCalc from '../SVG/FinalCalc.svg'
 import UIProto from '../SVG/UIProto.svg'
+import MVC from "../SVG/MVC.svg"
+import HardwareIF from  "../SVG/HardwareIF.svg"
+
+import { useEffect } from "react";
 
 const Trailblazer = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); 
+
     return (
         <div>
             <Header />
@@ -228,24 +237,42 @@ const Trailblazer = () => {
                 Because of how many different components Trailblazer has to support, a relational database was the best option. 
                 This allows to easily add and remove different parts from the simulation environment. 
             </div>
+            <div className='body-par'>
+                I used a DAO (data access operator) design pattern to provide an interface to the controller in the MVC design. 
+            </div>
+            <div className='body-par'>
+                By using OOP, I designed and built an inheritence structure to make sure the code was as maintainable and readable as possible.  
+            </div>
+            <div className='body-par'>
+                This made the database easy to access from other parts of the code and all of the functionality was encapsulated and decoupled
+                from other parts of the code base. 
+            </div>
             <br></br>
             <br></br>
-
 
             <div className='body-par-title-tbz'>
                 Interfaces To Hardware
             </div>
             <div className='body-par'>
-                Trailblazer in its current state only interfaces with hardware through the JSON file that is generated
-                after all the simulations have been exectued. However, in the future we hope to add some live data streams
-                over TCP or UDP to the channel emulator.
+                Trailblazer can interface with hardware, such as a channel emulator, through generated the JSON file.
+            </div>
+            <div className='body-par'>
+                I wrote code that allows Trailblazer to automatically upload the generated JSON to the Linux machine that 
+                talks to the hardware.
+            </div>
+            <div className='body-par'>
+                I then developed .sh launch files that take the JSON on the Linux machine and activates the hardware. The
+                JSON gets passed in and runs the simulation with hardware-in-the-loop. 
+            </div>
+            <div className='HardwareIF'>
+                <img src={HardwareIF} />
             </div>
             <br></br>
             <br></br>
 
 
             <div className='body-par-title-tbz'>
-                UI / UX Design
+                Front End Development
             </div>
             <div className='body-par'>
                 Once the foundation of Trailblazer had been built, the last step was to add a polished UI. I have experience 
@@ -263,10 +290,25 @@ const Trailblazer = () => {
                 The cylinders represent the vehicles in the simulation which house the antennas. The user can keep track of 
                 what is going on through the side panels and add/edit the path, vehicles, or the antennas. 
             </div>
+            <div className='body-par'>
+                After the UI design was finalized, I built the front end from scratch. I used Unity's built in UI API
+                to develop a Trailblazer UI library that had reusable components. 
+            </div>
+            <div className='body-par'>
+                Building a library really accelerated UI development and made sure the front end was easy to test and find
+                any sort of bugs. 
+            </div>
+            <div className='body-par'>
+                It also ensured that I could connect the front end easily to the model view controller which then talks
+                to all the backend code, such as the physics module and the database. 
+            </div>
+            <div className='MVC'>
+                <img src={MVC}></img>
+            </div>
             <br></br>
             <br></br>
 
-            <div className='center-title-tbz'>
+            <div className='center-title-tbz-original'>
                 Leadership Opportunities 
             </div>
             <div className='body-par'>
@@ -285,12 +327,12 @@ const Trailblazer = () => {
                 <br></br>
                 <br></br>
 
-                Managed and collaborated with two other software engineers to build the terrain engine 
+                Managed, mentored, and collaborated with two other software engineers to build the terrain engine 
             </div>
             <br></br>
             <br></br>
 
-            <div className='center-title-tbz'>
+            <div className='center-title-tbz-original'>
                 Notable Project Outcomes
             </div>
             <div className='body-par'>
@@ -305,7 +347,7 @@ const Trailblazer = () => {
                 <br></br>
                 <br></br>
 
-                Recieved over 18 months of continuous project funding due to very successful demos to high ranking engineers and sponsors
+                Recieved over 3 years of continuous project funding due to very successful demos to high ranking engineers and sponsors
                 <br></br>
                 <br></br>
 
@@ -317,7 +359,7 @@ const Trailblazer = () => {
             <br></br>
 
             <div className='body-par-title-tbz'>
-                Conculsion
+                Conclusion
             </div>
             <div className='body-par'>
                 Working on Trailblazer has fortified my software engineering skills. I have been able to get real world experience with simulation, unit testing,

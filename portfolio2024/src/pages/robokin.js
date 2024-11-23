@@ -14,6 +14,8 @@ import KalmanFilter from '../SVG/KalmanFilter.svg';
 import QuadArch from '../SVG/QuadArch.svg'
 import VideoComponent from '../components/videoComponent'
 
+import { useEffect } from 'react';
+
 const myCode = 
 `
 pn    = x(1);   % North position, m
@@ -56,6 +58,11 @@ end
 
 
 const Robokin = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); // This ensures it runs only on component mount
+
     return (
         <div>
             <Header />

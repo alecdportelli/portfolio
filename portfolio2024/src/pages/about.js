@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useEffect } from "react";
+
 import './about.css';
 
 import Header from '../components/header';
@@ -8,6 +10,11 @@ import Footer from '../components/footer';
 import Portrait from '../SVG/SelfPort.svg'
 
 const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); // This ensures it runs only on component mount
+
     return (
         <div>
             <Header />
