@@ -1,0 +1,92 @@
+.AI4-header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* For text bodies  */
+.AI4-body-header{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 25px;
+
+    color: #FFC300;
+}
+
+.body-par{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    margin-left: 33%;
+    margin-right: 33%;
+
+    padding-bottom: 50px;
+
+    font-size: 20px;
+}
+
+.AI4-ArmDiagram{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.Cam2Arm{
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.Diagram{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.centered-img-medium {
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+}
+
+.AI4codeSnippetStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 30% 2vh; 
+    height: 30vh;
+    max-width: 80%;
+    background-color: #131212;
+    border-radius: 5px;
+    border: 1px solid #FFC300;
+    overflow-x: auto;
+}
+
+.CNNDiagram{
+    padding-top:    10px;
+    padding-bottom: 10px;
+    margin-left:    15%;
+    margin-right:   15%;
+}
+
+.IKDiagram{
+    padding-top:    10px;
+    padding-bottom: 20px;
+    margin-left:    35%;
+    margin-right:   35%;
+}
