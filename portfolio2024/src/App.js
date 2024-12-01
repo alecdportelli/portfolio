@@ -12,8 +12,8 @@ import proj1Tile from "./SVG/proj1.svg";
 import proj2Tile from "./SVG/proj2.svg";
 import proj3Tile from "./SVG/proj3.svg";
 import proj4Tile from "./SVG/proj4.svg";
-import proj5Tile from "./SVG/proj4_1.svg";
-import proj6Tile from "./SVG/Proj6.svg";
+import proj5Tile from "./SVG/proj5.svg";
+import proj6Tile from "./SVG/proj6.svg";
 
 import Footer from './components/footer';
 
@@ -29,7 +29,7 @@ function App() {
   const projctRowTwo = [
     { src: proj3Tile, title: 'AI-SAFARI', description: 'A testbed to evaluate the security of RL algorithms', path: 'safari' },  
     { src: proj5Tile, title: 'Intro to RL Final Project', description: 'Training multi-agent UAV delivery systems in Unity', path: 'rl' }, 
-    { src: proj4Tile, title: 'Falcon', description: 'A 3D visualization tool for electronic warfare scenarios', path: 'falcon' }, 
+    { src: proj4Tile, title: 'AI For Robotics Final Project', description: 'A robot arm controlled by a camera', path: 'ai4robot' }, 
   ];
 
   const scrollToProjects = () => {

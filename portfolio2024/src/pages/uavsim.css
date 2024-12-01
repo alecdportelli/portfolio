@@ -78,3 +78,9 @@
     max-width: 30%;
     height: auto;
   }
+
+  .centered-img-medium {
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+  }

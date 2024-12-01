@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-import UUV from "../SVG/BlueUUV.svg";
+import UUV from "../SVG/BlueUUV.svg"
 import VenDiagram from "../SVG/VenDiagram.svg"
 import AspenArchDiagram from "../SVG/AspenArch.svg"
 import UUVLiDAR from "../SVG/UUVLiDAR.svg"

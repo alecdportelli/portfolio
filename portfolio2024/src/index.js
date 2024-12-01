@@ -5,12 +5,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
+
 import Aspen from './pages/aspen';
 import Trailblazer from './pages/tbz';
 import Safari from './pages/safari';
 import Falcon from './pages/falcon';
 import UAVSim from './pages/uavsim';
 import Robokin from './pages/robokin';
+import AI4Robot from './pages/ai4robot';
+
 import About from './pages/about';
 
 import {
@@ -48,6 +51,10 @@ const router = createBrowserRouter([
   {
     path:"robokin",
     element:<Robokin/>
+  },
+  {
+    path:"ai4robot",
+    element:<AI4Robot/>
   },
   {
     path:"about",
